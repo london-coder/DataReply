@@ -8,7 +8,7 @@ I know a whole sbt project is overkill for such a trivial task, but it's force o
 What the people, who conducted the interview, said they wanted to see is,
 for iterations 1 to 7:
 
-[for proper formatting, view this in RAW mode. (cr not rendered correctly)]
+[for proper formatting, view this in RAW mode. (lf(\n) is not rendered correctly)]
 
 ```
 o
