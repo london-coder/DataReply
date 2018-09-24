@@ -9,7 +9,7 @@ What the people, who conducted the interview, said they wanted to see is,
 for iterations 1 to 7:
 
 o
- 
+
 o
  
  o
