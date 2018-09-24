@@ -6,16 +6,16 @@ object Diamonds extends Greeting with App {
 }
 
 trait Greeting {
-  lazy val howmany: String = "how many? "
 
   def diamond(size: Int): Unit = {
   	recursiveDiamond(1, size - (size/2+1))
   }
+  import scala.annotation.tailrec
 
-  def recursiveDiamond(count: Int, spaces: Int): Unit = {
+  @tailrec final def recursiveDiamond(count: Int, spaces: Int): Unit = {
   	println( " "*Math.abs( spaces ) + "o"*count )
   	val nspaces = spaces - 1
   	val ncount = count + (if(nspaces >= 0) 2 else -2)
-	if(count > 0) recursiveDiamond(ncount, nspaces)
+	  if(count > 0) recursiveDiamond(ncount, nspaces)
   }
 }
